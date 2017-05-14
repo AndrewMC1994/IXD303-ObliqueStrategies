@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url(../img/background.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: #111e35;
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1vw;
+}
+
+.container {}
+
+#randomStrategy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    border: 0px solid white;
+    border-width: 0.3vw;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+}
+
+.wrapperleft {
+    width: 25vw;
+    height: 100vh;
+    float: left;
+}
+
+.wrapperright {
+    width: 25vw;
+    float: right;
+    height: 100vh;
+}
+
+#spaceman {
+    width:4.5vw;
+    outline: 0.001em solid transparent;
+    margin-top: 13vw;
+    margin-left: 17vw;
+}
+
+.satellite {
+    width: 15vw;
+    margin-top: 16vh;
+}
+
+.satelliteend {
+    width: 3vw;
+    margin-bottom: 4vh;
+    margin-left: -14.4vw;
+    outline: 0.001em solid transparent;
+    -webkit-transform-origin: center;
+    transform-origin:right;
+    -webkit-animation: swinging 5s ease-in-out forwards infinite;
+    animation: swinging 5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes swinging {
+    0% {
+        -webkit-transform: rotate(5deg);
+    }
+    50% {
+        -webkit-transform: rotate(-5deg)
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+    }
+}
+
+@keyframes swinging {
+    100% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    0% {
+        transform: rotate(20deg);
+    }
+    
+}
+
+p {
+    color: #ffffff;
+}
+
+input {
+    cursor: pointer;
+    width: 8vw;
+    height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 0px solid #808080;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
